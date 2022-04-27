@@ -1,4 +1,4 @@
-<h1 style="color:#1c42a0"> W1D3 Deploy </h1>
+<h1 style="color:#1c42a0"> W1D3 Deploy (Start - End) </h1>
 
 <h2 style="color:tomato">🦊 Agenda</h2>
 
@@ -58,19 +58,55 @@ Database has been created and is available
 Created postgresql-xxxx-xxxxx as DATABASE_URL
 ```
 #### 4. Setup Code for Deploy Heroku 
-- Procfile 
+- Procfile  
+  https://devcenter.heroku.com/articles/getting-started-with-nodejs#define-a-procfile
 - package.json
+  ```
+  "scripts": {
+    "dev": "NODE_ENV=development npx nodemon app.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+  ```
 - config.json (sequelize production mode)
+  https://devcenter.heroku.com/articles/heroku-postgresql
+  ```
+  {
+    "production": {
+      "use_env_variable": "DATABASE_URL",
+      "ssl": true,
+      "dialect": "postgres",
+      "protocol": "postgres",
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      }
+    }
+  }
+  ```
 - PORT
 
 #### 5. Upload to Heroku by git 
+Tapi sebelum itu check dahulu git remote yang dimiliki
+
 ```
+git remote -v
 heroku git:remote --app NAMA_APLIKASI
 ```
 
+Push ke branch main git heroku
+```
+git push heroku NAMA_BRANCH_SAAT_INI:main
+```
 
 
 #### 6. Check Log
+
+```
+heroku logs -t
+```
 
 #### 7. Setup ENV 
 
