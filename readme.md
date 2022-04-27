@@ -1,4 +1,4 @@
-<h1 style="color:#1c42a0"> W1D3 Deploy (05:15) </h1>
+<h1 style="color:#1c42a0"> W1D3 Deploy (05:15 - 05.41) </h1>
 
 <h2 style="color:tomato">🦊 Agenda</h2>
 
@@ -96,6 +96,10 @@ git remote -v
 heroku git:remote --app NAMA_APLIKASI
 ```
 
+Push ke branch main git heroku
+```
+git push heroku NAMA_BRANCH_SAAT_INI:main
+```
 
 
 #### 6. Check Log
