@@ -7,11 +7,10 @@ module.exports = {
     return bcrypt.hashSync(string)
   },
   comparePassword : (string, hashString) => {
-    console.log(string, hashString);
-    return bcrypt.compareSync(string, JWTSECRET)
+    return bcrypt.compareSync(string, hashString)
   },
   createToken : (payload) => {
-    return jwt.sign(payload, )
+    return jwt.sign(payload, JWTSECRET)
   },
   changeToPayload : (token) => {
     return jwt.verify(token, JWTSECRET)
