@@ -76,10 +76,3 @@ heroku git:remote --app NAMA_APLIKASI
 
 #### 8. Inisialisasi Tabel Database
 #### 8.1 Run Bash on Cloud Server Heroku
-
-
-
-### ✐ ✐ Deploy Server with Firebase
-```
-prerequisite : Install firebase-tools & Account Google 
-```
