@@ -112,3 +112,4 @@ heroku logs -t
 
 #### 8. Inisialisasi Tabel Database
 #### 8.1 Run Bash on Cloud Server Heroku
+ 
