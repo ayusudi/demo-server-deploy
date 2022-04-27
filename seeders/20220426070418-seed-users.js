@@ -4,11 +4,6 @@ const { hashPassword } = require("../helpers/helper");
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    
-    if(process.env.NODE_ENV !== 'production'){
-      require("dotenv").config()
-    }
-
     let data = [
       {
         username: "user1",

@@ -109,6 +109,5 @@ heroku logs -t
 ```
 
 #### 7. Setup ENV 
-
 #### 8. Inisialisasi Tabel Database
 #### 8.1 Run Bash on Cloud Server Heroku
