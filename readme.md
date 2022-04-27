@@ -1,4 +1,4 @@
-<h1 style="color:#1c42a0"> W1D3 Deploy </h1>
+<h1 style="color:#1c42a0"> W1D3 Deploy (05:15) </h1>
 
 <h2 style="color:tomato">🦊 Agenda</h2>
 
